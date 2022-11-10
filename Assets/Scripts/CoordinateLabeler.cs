@@ -54,8 +54,9 @@ public class CoordinateLabeler : MonoBehaviour
 
     private void DisplayCoordinates()
     {
-        coordinates.x = Mathf.RoundToInt(transform.parent.position.x / 10);
-        coordinates.y = Mathf.RoundToInt(transform.parent.position.z / 10);
+        if(gridManager == null) return;
+        coordinates.x = Mathf.RoundToInt(transform.parent.position.x / gridManager.UnityGridsSize);
+        coordinates.y = Mathf.RoundToInt(transform.parent.position.z / gridManager.UnityGridsSize);
         label.text = coordinates.x + "," + coordinates.y;
     }
 

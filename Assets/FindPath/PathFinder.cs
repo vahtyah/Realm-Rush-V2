@@ -14,6 +14,7 @@ public class PathFinder : MonoBehaviour
 
     Queue<Node> frontier = new Queue<Node>();
     Dictionary<Vector2Int, Node> reached = new Dictionary<Vector2Int, Node>();
+    [SerializeField] Node node;
 
     Vector2Int[] directions = { Vector2Int.right, Vector2Int.left, Vector2Int.up, Vector2Int.down };
     GridManager gridManager;
@@ -30,6 +31,7 @@ public class PathFinder : MonoBehaviour
         startNode = gridManager.Grids[startCoordinates];
         destinateNode = gridManager.Grids[destinationCoordinates];
         BreadthFirstSearch();
+        BuildPath();
     }
 
     private void ExploreNeighbors()
@@ -46,6 +48,8 @@ public class PathFinder : MonoBehaviour
         foreach (Node neighbor in neighbors)
             if (!reached.ContainsKey(neighbor.coordinates) && neighbor.isWalkable)
             {
+                //print(neighbor.coordinates + " " + neighbor.isWalkable + "Explore");
+                print("Explo");
                 neighbor.connectedTo = currentSearchNode;
                 reached.Add(neighbor.coordinates, neighbor);
                 frontier.Enqueue(neighbor);
@@ -67,7 +71,7 @@ public class PathFinder : MonoBehaviour
         }
     }
 
-    List<Node> BuldPath()
+    List<Node> BuildPath()
     {
         List<Node> path = new List<Node>();
         Node curentNode = destinateNode;
