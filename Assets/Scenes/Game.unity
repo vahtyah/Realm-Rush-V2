@@ -2387,7 +2387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2656340692025844059, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
       propertyPath: isPlaceable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
@@ -3152,7 +3152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2656340692025844059, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
       propertyPath: isPlaceable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
@@ -9480,7 +9480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1bfc5ae18c9044cad55802ca929935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridSize: {x: 13, y: 9}
+  gridSize: {x: 13, y: 10}
   unityGridsSize: 10
 --- !u!4 &837233109
 Transform:
@@ -9869,7 +9869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2656340692025844059, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
       propertyPath: isPlaceable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
@@ -13640,7 +13640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2656340692025844059, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
       propertyPath: isPlaceable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
@@ -18900,7 +18900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2656340692025844059, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
       propertyPath: isPlaceable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
@@ -19606,7 +19606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2656340692025844059, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
       propertyPath: isPlaceable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051b9aac96e8c9c4ea182c4a8f877328, type: 3}
@@ -23341,11 +23341,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1634998224, guid: a06c0b60e03b09a4098ef464a3bbb6c1, type: 3}
       propertyPath: startCoordinates.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1634998224, guid: a06c0b60e03b09a4098ef464a3bbb6c1, type: 3}
       propertyPath: startCoordinates.y
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1634998224, guid: a06c0b60e03b09a4098ef464a3bbb6c1, type: 3}
       propertyPath: destinateCoordinates.x
@@ -23357,11 +23357,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1634998224, guid: a06c0b60e03b09a4098ef464a3bbb6c1, type: 3}
       propertyPath: destinationCoordinates.x
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1634998224, guid: a06c0b60e03b09a4098ef464a3bbb6c1, type: 3}
       propertyPath: destinationCoordinates.y
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1634998224, guid: a06c0b60e03b09a4098ef464a3bbb6c1, type: 3}
       propertyPath: currentSearchNode.coordinates.x
@@ -23369,7 +23369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457038648466414772, guid: a06c0b60e03b09a4098ef464a3bbb6c1, type: 3}
       propertyPath: poolSize
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1457038648466414773, guid: a06c0b60e03b09a4098ef464a3bbb6c1, type: 3}
       propertyPath: m_RootOrder
