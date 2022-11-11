@@ -42,16 +42,22 @@ public class PathFinder : MonoBehaviour
 
     private void ExploreNeighbors()
     {
+        print(1);
         List<Node> neighbors = new List<Node>();
 
         foreach (Vector2Int direction in directions)
         {
+            print(2);
             Vector2Int neighborCoords = currentSearchNode.coordinates + direction;
             if (grids.ContainsKey(neighborCoords))
+            {
                 neighbors.Add(grids[neighborCoords]);
+            }
         }
 
         foreach (Node neighbor in neighbors)
+        {
+            print(!reached.ContainsKey(neighbor.coordinates) + " " + neighbor.isWalkable);
             if (!reached.ContainsKey(neighbor.coordinates) && neighbor.isWalkable)
             {
                 //print(neighbor.coordinates + " " + neighbor.isWalkable + "Explore");
@@ -60,6 +66,7 @@ public class PathFinder : MonoBehaviour
                 reached.Add(neighbor.coordinates, neighbor);
                 frontier.Enqueue(neighbor);
             }
+        }
     }
 
     private void BreadthFirstSearch()
@@ -101,6 +108,7 @@ public class PathFinder : MonoBehaviour
 
     public bool WillBlockPath(Vector2Int coordinates)
     {
+        print("willblockpath");
         if (grids.ContainsKey(coordinates))
         {
             bool previousState = grids[coordinates].isWalkable;

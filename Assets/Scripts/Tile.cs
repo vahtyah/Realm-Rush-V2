@@ -16,11 +16,6 @@ public class Tile : MonoBehaviour
     {
         gridManager = FindObjectOfType<GridManager>();
         pathFinder = FindObjectOfType<PathFinder>();
-        
-    }
-
-    private void Start()
-    {
         if (gridManager != null)
         {
             coordinates = gridManager.GetCoordinatesFromPosition(transform.position);
@@ -30,10 +25,16 @@ public class Tile : MonoBehaviour
                 gridManager.BlockNode(coordinates);
             }
         }
+    }
+
+    private void Start()
+    {
         node = gridManager.GetNode(coordinates);
+
     }
     private void OnMouseDown()
     {
+        print("onmousedown");
         if (gridManager.GetNode(coordinates).isWalkable && !pathFinder.WillBlockPath(coordinates))
         {
             bool isPlaced = towerPrefabs.CreateTower(towerPrefabs, transform.position);

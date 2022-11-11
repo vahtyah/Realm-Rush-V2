@@ -27,7 +27,6 @@ public class GridManager : MonoBehaviour
     public void BlockNode(Vector2Int coordinates)
     {
         //print(coordinates + " " + grids.ContainsKey(coordinates) + " BlockNode");
-        print("BlockNode");
         if (grids.ContainsKey(coordinates))
         {
             grids[coordinates].isWalkable = false;
@@ -42,7 +41,7 @@ public class GridManager : MonoBehaviour
         {
             entry.Value.connectedTo = null;
             entry.Value.isPath = false;
-            entry.Value.isWalkable = false;
+            entry.Value.isExplored = false;
         }
     }
 
